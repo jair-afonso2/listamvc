@@ -8,10 +8,16 @@
             <th>Estado</th>
             <th>Habitantes</th>
         </tr>
-    </table>
-    @{
+        @{
         foreach(var item in Model){
-            <li>@item.Nome - @item.Estado - @item.Habitantes</li>
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Nome</td>
+                <td>@item.Estado</td>
+                <td>@item.Habitantes</td>
+            </tr>
         }
     }
+    </table>
+    
 </div>
